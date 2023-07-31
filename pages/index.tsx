@@ -1,6 +1,6 @@
 import { CodeBlock } from '@/components/CodeBlock';
 import { LanguageSelect, languages } from '@/components/LanguageSelect';
-import { Adsense } from '@eisberg-labs/next-google-adsense';
+import Adsense from '@eisberg-labs/next-google-adsense';
 import { TextBlock } from '@/components/TextBlock';
 import { TranslateBody } from '@/types/types';
 import Head from 'next/head';
@@ -125,6 +125,15 @@ export default function Home() {
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q03Q3VY7RV"></script>
         {/* Add the Google AdSense script */}
         <script data-ad-client="YOUR_AD_CLIENT_ID" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        {/* Buy Me a Coffee */}
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/buymeacoffee/2.0.0/button.min.css"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -145,20 +154,22 @@ export default function Home() {
             <h1 className="text-black font-bold text-2xl ml-2">CodeTranslify</h1>
           </div>
           <nav>
-              <div className="flex space-x-4 mt-2">
-                <a href="https://twitter.com/" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-twitter text-2xl shadow-md"></i>
-                </a>
-                <a href="https://www.facebook.com/" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-facebook text-2xl shadow-md"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin text-2xl shadow-md"></i>
-                </a>
-                <a href="https://github.com/" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github text-2xl shadow-md"></i>
-                </a>
-              </div>
+          {/* Add Buy Me a Coffee button */}
+<div className="flex space-x-4 mt-2 shadow-md">
+  {/* Add Buy Me a Coffee button */}
+  <a
+    className="flex items-center justify-center px-3 py-1 text-base font-bold text-white bg-yellow-500 rounded-md shadow-md transition-colors duration-200 hover:bg-yellow-600"
+    href="https://www.buymeacoffee.com/yourusername"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fas fa-mug-hot mr-2 text-sm"></i>
+    <span className="hidden md:inline">Buy Me a Coffee</span>
+  </a>
+</div>
+
+
+
           </nav>
         </div>
       </header>
@@ -289,72 +300,62 @@ export default function Home() {
   <div className="mt-4 flex items-center justify-center space-x-3 text-sm">
     <img className="w-12 h-12 rounded-full shadow-md" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="John Smith" />
     <div>
-      <div className="font-semibold text-gray-900">John Smith</div>
+      <div className="font-semibold text-gray-900">Sarah Smith</div>
       <div className="text-gray-600">Senior Software Engineer</div>
     </div>
   </div>
 </div>
 
 
-
-
-
-
-
-
-
-
-
 <hr className="my-8 border-gray-300" />
-{/* Footer */}
+{/* fOOTER */}
+<footer class="bg-gray-100 py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+      {/* CodeTranslify Description */}
+      <div>
+        <h3 class="text-xl font-bold">CodeTranslify</h3>
+        <p class="text-sm mt-2 text-gray-600">
+          CodeTranslify is an AI-powered platform that allows you to easily convert or generate code from natural language or programming language code. Our advanced AI algorithms ensure accurate and efficient code translation for developers and programmers worldwide.
+        </p>
+      </div>
 
-      <footer className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-            {/* CodeTranslify Description */}
-            <div className="sm:order-2">
-              <h3 className="text-xl font-bold">CodeTranslify</h3>
-              <p className="text-sm mt-2 text-gray-600">
-                CodeTranslify is an AI-powered platform that allows you to easily convert or generate code from natural language or programming language code. Our advanced AI algorithms ensure accurate and efficient code translation for developers and programmers worldwide.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div className="sm:order-1">
-              <h3 className="text-xl font-bold">Quick Links</h3>
-              <ul className="mt-2 space-y-2">
-                <li><a href="#home" className="text-gray-600 hover:text-blue-600">Home</a></li>
-                <li><a href="#about" className="text-gray-600 hover:text-blue-600">About</a></li>
-                <li><a href="#services" className="text-gray-600 hover:text-blue-600">Services</a></li>
-                <li><a href="#contact" className="text-gray-600 hover:text-blue-600">Contact</a></li>
-              </ul>
-            </div>
-
-            {/* Social Media */}
-            <div className="sm:order-3">
-              <h3 className="text-xl font-bold">Socials</h3>
-              <div className="flex space-x-4 mt-2">
-                <a href="https://twitter.com/codetranslify" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-twitter text-2xl shadow-md"></i>
-                </a>
-                <a href="https://www.facebook.com/codetranslify" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-facebook text-2xl shadow-md"></i>
-                </a>
-                <a href="https://www.linkedin.com/company/codetranslify" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-linkedin text-2xl shadow-md"></i>
-                </a>
-                <a href="https://github.com/codetranslify" className="text-[#7B7F87] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github text-2xl shadow-md"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr className="my-8 border-gray-300" />
-          <div className="text-center text-sm text-gray-600">
-            © {new Date().getFullYear()} CodeTranslify. All rights reserved.
-          </div>
+      {/* Social Media */}
+      <div>
+        <h3 class="text-xl font-bold">Socials</h3>
+        <div class="flex space-x-4 mt-2">
+          <a href="https://twitter.com/codetranslify" class="text-[#1DA1F2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter text-2xl shadow-md"></i>
+          </a>
+          <a href="https://www.facebook.com/codetranslify" class="text-[#4267B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook text-2xl shadow-md"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/codetranslify" class="text-[#2867B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin text-2xl shadow-md"></i>
+          </a>
+          <a href="https://github.com/codetranslify" class="text-[#333] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github text-2xl shadow-md"></i>
+          </a>
         </div>
-      </footer>
+      </div>
+            {/* Contact Information */}
+      <div class="text-center sm:text-left">
+        <h3 class="text-xl font-bold">Contact Us</h3>
+        <p class="text-sm mt-2 text-gray-600">
+          Have any questions or need support? Reach out to us!
+        </p>
+        <a href="mailto:info@codetranslify.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-4 inline-block">
+          Contact Now
+        </a>
+      </div>
+    </div>
+    <hr class="my-8 border-gray-300" />
+    <div class="text-center text-sm text-gray-600">
+      © {new Date().getFullYear()} CodeTranslify. All rights reserved.
+    </div>
+  </div>
+</footer>
+
     </>
   );
 }

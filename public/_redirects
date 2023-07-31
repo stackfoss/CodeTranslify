@@ -1,0 +1,4 @@
+# Netlify redirects file, edit with your domain
+# https://www.netlify.com/docs/redirects/
+https://codetranslify.netlify.app/*  https://codetranslify.stackfoss.com/:splat  301!
+http://codetranslify.netlify.app/*  https://codetranslify.stackfoss.com/:splat  301!
