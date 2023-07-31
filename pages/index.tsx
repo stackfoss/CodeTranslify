@@ -1,5 +1,6 @@
 import { CodeBlock } from '@/components/CodeBlock';
 import { LanguageSelect, languages } from '@/components/LanguageSelect';
+import { Adsense } from '@eisberg-labs/next-google-adsense';
 import { TextBlock } from '@/components/TextBlock';
 import { TranslateBody } from '@/types/types';
 import Head from 'next/head';
@@ -114,6 +115,7 @@ export default function Home() {
     <>
       <Head>
         <title>CodeTranslify</title>
+        
         <meta name="description" content="Use AI to Convert or Generate Code from one language to another. AI Code Translator." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="AI Code Converter, Code Convert AI,AI Code translate, Code Generate AI, Code Translator, AICodeHelper, free, online" />
@@ -121,6 +123,8 @@ export default function Home() {
         <link rel="icon" href="/code.png" />
         {/* Add the Google Analytics script tags here */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q03Q3VY7RV"></script>
+        {/* Add the Google AdSense script */}
+        <script data-ad-client="YOUR_AD_CLIENT_ID" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -132,7 +136,8 @@ export default function Home() {
           }}
         />
       </Head>
-
+      {/* Add the Google AdSense : YOUR_AD_CLIENT_ID*/}
+      <Adsense client_id="YOUR_AD_CLIENT_ID" />
       <header className="bg-gray-100 py-4 shadow-md">
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
