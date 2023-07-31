@@ -309,48 +309,48 @@ export default function Home() {
 
 <hr className="my-8 border-gray-300" />
 {/* fOOTER */}
-<footer class="bg-gray-100 py-8">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+<footer className="bg-gray-100 py-8">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
       {/* CodeTranslify Description */}
       <div>
-        <h3 class="text-xl font-bold">CodeTranslify</h3>
-        <p class="text-sm mt-2 text-gray-600">
+        <h3 className="text-xl font-bold">CodeTranslify</h3>
+        <p className="text-sm mt-2 text-gray-600">
           CodeTranslify is an AI-powered platform that allows you to easily convert or generate code from natural language or programming language code. Our advanced AI algorithms ensure accurate and efficient code translation for developers and programmers worldwide.
         </p>
       </div>
 
       {/* Social Media */}
       <div>
-        <h3 class="text-xl font-bold">Socials</h3>
-        <div class="flex space-x-4 mt-2">
-          <a href="https://twitter.com/codetranslify" class="text-[#1DA1F2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-twitter text-2xl shadow-md"></i>
+        <h3 className="text-xl font-bold">Socials</h3>
+        <div className="flex space-x-4 mt-2">
+          <a href="https://twitter.com/codetranslify" className="text-[#1DA1F2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter text-2xl shadow-md"></i>
           </a>
-          <a href="https://www.facebook.com/codetranslify" class="text-[#4267B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-facebook text-2xl shadow-md"></i>
+          <a href="https://www.facebook.com/codetranslify" className="text-[#4267B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook text-2xl shadow-md"></i>
           </a>
-          <a href="https://www.linkedin.com/company/codetranslify" class="text-[#2867B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin text-2xl shadow-md"></i>
+          <a href="https://www.linkedin.com/company/codetranslify" className="text-[#2867B2] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin text-2xl shadow-md"></i>
           </a>
-          <a href="https://github.com/codetranslify" class="text-[#333] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github text-2xl shadow-md"></i>
+          <a href="https://github.com/codetranslify" className="text-[#333] hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github text-2xl shadow-md"></i>
           </a>
         </div>
       </div>
             {/* Contact Information */}
-      <div class="text-center sm:text-left">
-        <h3 class="text-xl font-bold">Contact Us</h3>
-        <p class="text-sm mt-2 text-gray-600">
+      <div className="text-center sm:text-left">
+        <h3 className="text-xl font-bold">Contact Us</h3>
+        <p className="text-sm mt-2 text-gray-600">
           Have any questions or need support? Reach out to us!
         </p>
-        <a href="mailto:info@codetranslify.com" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-4 inline-block">
+        <a href="mailto:info@codetranslify.com" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md mt-4 inline-block">
           Contact Now
         </a>
       </div>
     </div>
-    <hr class="my-8 border-gray-300" />
-    <div class="text-center text-sm text-gray-600">
+    <hr className="my-8 border-gray-300" />
+    <div className="text-center text-sm text-gray-600">
       © {new Date().getFullYear()} CodeTranslify. All rights reserved.
     </div>
   </div>
