@@ -29,7 +29,19 @@
     "prettier-plugin-tailwindcss": "^0.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "workbox-broadcast-update": "^7.0.0",
+    "workbox-build": "^7.0.0",
+    "workbox-cacheable-response": "^7.0.0",
+    "workbox-core": "^7.0.0",
+    "workbox-expiration": "^7.0.0",
+    "workbox-google-analytics": "^7.0.0",
+    "workbox-precaching": "^7.0.0",
+    "workbox-range-requests": "^7.0.0",
+    "workbox-recipes": "^7.0.0",
+    "workbox-streams": "^7.0.0",
+    "workbox-webpack-plugin": "^7.0.0",
+    "workbox-window": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
