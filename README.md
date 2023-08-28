@@ -12,7 +12,7 @@ Welcome to CodeTranslify, a powerful tool built with Next.js that leverages the 
 
 ## Demo
 
-Check out the live demo of CodeTranslify: [https://codetranslify.stackfoss.com/](https://codetranslify.stackfoss.com/)
+Check out the live demo of CodeTranslify: [https://codetranslify.akselinc.com/](https://codetranslify.akselinc.com/)
 
 ## Enhanced Features
 
